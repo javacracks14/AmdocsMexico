@@ -1,0 +1,46 @@
+package amdocsMexico;
+import java.util.Scanner;
+
+public class DecisionControlDemo {
+	public static void main(String[] args) {
+		int num;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the num: ");
+		num = sc.nextInt();
+		
+		//If statements
+		if(num == 0) {
+			System.out.println("The numer is cero");
+		}
+		
+		//If-else
+		if (num > 0) {
+			System.out.println("Number is greater than cero");
+		} else {
+			System.out.println("Number is lower than cero");
+		}
+		
+		//Nested if 
+		if (num == 0) {
+			System.out.println("Number is  cero");
+		} else {
+			if (num > 0) {
+				System.out.println("Number is greater than cero");
+			} else {
+				System.out.println("Number is lower than cero");
+			}
+		}
+		//Multiple if-else condition
+		if (num == 0) {
+			System.out.println("Number is  cero");
+		} else if(num > 0){
+			System.out.println("Number is greater than cero");
+		} else {
+			System.out.println("Number is lower than cero");
+		}
+		
+		
+	}
+}
