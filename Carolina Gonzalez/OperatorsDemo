@@ -1,0 +1,67 @@
+package amdocsMexico;
+
+public class OperatorsDemo {
+	public static void main(String[] args) {
+		int number1=10, number2=8, output;
+		
+		//Operators
+		output = number1 + number2;
+		System.out.println("Addition Output is: " + output);
+		output = number1 - number2;
+		System.out.println("Subtraction Output is: " + output);
+		output = number1 * number2;
+		System.out.println("Multiplication Output is: " + output);
+		output = number1 / number2;
+		System.out.println("Division Output is: " + output);
+		output = number1 % number2;
+		System.out.println("Addition Modules is: " + output);
+		
+		//Assigment Operators
+		System.out.println("Number1 value is: " + number1 + "\tNumber2 value is: " + number2);
+		number1+=number2;
+		System.out.println("Number1 value is: " + number1 + "\tNumber2 value is: " + number2);
+		number1-=number2;
+		System.out.println("Number1 value is: " + number1 + "\tNumber2 value is: " + number2);
+		number1*=number2;
+		System.out.println("Number1 value is: " + number1 + "\tNumber2 value is: " + number2);
+		number2/=number1;
+		System.out.println("Number1 value is: " + number1 + "\tNumber2 value is: " + number2);
+		
+		//Relational Operators
+		System.out.println("Comparison for Greater Than: " + (number1 > number2));
+		System.out.println("Comparison for Greater than equal to Than: " + (number1 >= number2));
+		System.out.println("Comparison for Less Than: " + (number1 < number2));
+		System.out.println("Comparison for Less than equal to Than: " + (number1 > number2));
+		System.out.println("Comparison for Equal Than: " + (number1 == number2));
+		System.out.println("Comparison for Not equal to Than: " + (number1 != number2));
+		
+		//Logical Operators
+		System.out.println("Logical AND Operator Value is:  " + (number1 > number2 && number1 == number2));
+		System.out.println("Logical OR Operator Value is:  " + (number1 > number2 || number1 == number2));
+		System.out.println("Logical NOT Operator Value is:  " + (number1 > number2 && number1 != number2));
+		
+		//Unary Operators
+		System.out.println("Value of Number1 is:  " + number1);
+		System.out.println("Increment operation:  " + (number1++));
+		System.out.println("Value of Number1 After increment is:  " + number1);
+		System.out.println();
+		System.out.println("Value of Number1 is:  " + number1);
+		System.out.println("Increment operation:  " + (++number1));
+		System.out.println("Value of Number1 After increment is:  " + number1);
+		System.out.println();
+		System.out.println("Value of Number1 is:  " + number1);
+		System.out.println("Decrement operation:  " + (number1--));
+		System.out.println("Value of Number1 After Decrement is:  " + number1);
+		System.out.println();
+		System.out.println("Value of Number1 is:  " + number1);
+		System.out.println("Decrement operation:  " + (--number1));
+		System.out.println("Value of Number1 After Decrement is:  " + number1);
+		System.out.println();
+		
+		//Ternary Operator
+		System.out.println((number1 > number2) 
+				? "Number one is greather than number two" 
+						: "Number 2 is greater than number 2");
+		
+	}
+}
