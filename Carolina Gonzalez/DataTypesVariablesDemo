@@ -1,0 +1,22 @@
+package amdocsMexico;
+
+public class DataTypesVariablesDemo {
+	public static void main(String[] args) {
+		int wholeNumber;
+		wholeNumber = 10;
+		
+		float decimalNumber1 = 12.36f;
+		double decimalNumber2 = 199.7353;
+		char singleAlphabet = 'a';
+		boolean value = true;
+		long longIntValue = 2352;
+		short shortValue = 2324;
+		
+		System.out.println("The value in Integer is " + wholeNumber);
+		System.out.println("The value in Float is " + decimalNumber1);
+		System.out.println("The value in Double is " + decimalNumber2);
+		System.out.println("The value in Char is " + singleAlphabet + "\nThe value in the Boolean is " + value);
+		System.out.println("\"Hello\" from \"Amdocs\"");
+		System.out.println("The value in Long is " + longIntValue + "\nThe value in Short is: " + shortValue);
+	}
+}
