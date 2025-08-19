@@ -1,0 +1,57 @@
+ package amdocsMexico;
+
+import java.util.Iterator;
+
+public class IterativeDemo {
+	public static void main(String[] args) {
+		//For loop
+		for (int i = 1; i <= 10; i++) {
+			System.out.println(i);
+		}
+		System.out.println("Outside the loop");
+		
+		//While loop
+		int i = 1;
+		while(i <= 10) {
+			System.out.println(i);
+			i++;
+		}
+		System.out.println("Outside the while loop");
+		
+		//do-while loop
+		int i = 1;
+		do {
+			System.out.println(i);
+			i++;
+		}
+		while(i <= 10);
+		System.out.println("Outside the while loop");
+		
+		//Nested loop
+		for (int row = 1; row <= 5; row++) {
+			for (int col = 1; col <= 5; col++) {
+				System.out.print(row + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("Outside the loop");
+		
+		//Break statement
+		for (int i = 1; i <= 10; i++) {
+			if (i <= 5) {
+				System.out.println(i);
+			}else {
+				break;
+			}	
+		}
+		
+		//Continue statement
+		for (int i = 1; i <= 10; i++) {
+			if (i % 2 == 0) {
+				System.out.println(i);
+			}else {
+				continue;
+			}	
+		}
+	}
+}
