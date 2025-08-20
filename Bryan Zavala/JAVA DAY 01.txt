@@ -1,0 +1,286 @@
+
+
+Bryan Alejandro Zavala Garcia
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+FirstJavaProgram.java
+
+package com.amdocs;
+
+public class FirstJavaProgram {
+
+	public static void main(String[] args) {
+		System.out.println("Hello this is my first Java Program!");
+	}
+
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DataTypesNDemos.java
+
+package com.amdocs;
+
+public class DataTypesNDemo {
+	public static void main(String[] args) {
+		int wholeNumber; //Declaring a variable
+		wholeNumber = 10; //Initialize a variable
+		
+		float decimalNum1 = 12.36f;
+		double decimalNum2 = 199.7353;
+		char singleAl = 'a';
+		boolean value = true;
+		long longIntV = 2352;
+		short shortIntV = 2324;
+		
+		System.out.println("The value in the Integer is " +wholeNumber);
+		System.out.println("The value of the integer is" +decimalNum2+ "\nThe Boolean value is"+value);
+		System.out.println("The value in long is: "+longIntV+"\nThe value in Short is: "+shortIntV);
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+OperatorDemo.java
+
+package com.amdocs;
+
+//public class OperatorDemo {
+//	
+//	public static void main(String[] args) {
+//		
+//		int number1=10, number2=8, output, number3=8;
+//		
+//		output = number1 + number2;
+//		System.out.println("Addition Output is: "+output);
+//		output = number1 - number2;
+//		System.out.println("Substraction Output is: "+output);
+//		output = number1 * number2;
+//		System.out.println("Multiplication Output is: "+output);
+//		output = number1 / number2;
+//		System.out.println("Division Output is: "+output);
+//		output = number1 % number2;
+//		System.out.println("Modulus Output is: "+output);
+//		
+//		System.out.println("Number1 Values is: "+number1+"\tNumber2 VAlues is: "+number2);
+//		number1+=number2;
+//		number1-=number2;
+//		number1*=number2;
+//		number1/=number2;
+//		System.out.println("Number1 Values is: "+number1+"\tNumber2 VAlues is: "+number2);
+//		
+//		System.out.println("Comparison for Greater Than: "+(number1>number2));
+//		System.out.println("Comparison for Greater Than Equal To: "+(number1>=number2));
+//		System.out.println("Comparison for Less Than: "+(number1<number2));
+//		System.out.println("Comparison for Less Than Equal To: "+(number1<=number2));
+//		System.out.println("Comparison for Equal Than: "+(number1==number2));
+//		System.out.println("Comparison for Not Equal Than: "+(number1!=number2));
+//		
+//		System.out.println("Logical And Operator Values is: "+(number1>number2 && number1==number3));
+//		System.out.println("Logical OR Operator Values is: "+(number1>number2 || number1==number3));
+//		System.out.println("Logical Not Operator Values is: "+(number1>number2 && number1!=number3));
+//	}
+
+//	public class OperatorDemo {
+//		
+//		public static void main (String[] args) {
+//			
+//			int number=1;
+//			
+//			System.out.println("Value of Number is: "+number);
+//			System.out.println("Increment Operation: "+(number++));
+//			System.out.println("Value of Number After Increment is: "+number);
+//			System.out.println();
+//			System.out.println("Value of Number is: "+number);
+//			System.out.println("Increment Operation: "+(++number));
+//			System.out.println("Value of Number After Increment is: "+number);
+//			System.out.println();
+//			System.out.println("Value of Number is: "+number);
+//			System.out.println("Decrement Operation: "+(number--));
+//			System.out.println("Value of Number After Increment is: "+number);
+//			System.out.println();
+//			System.out.println("Value of Number is: "+number);
+//			System.out.println("Decrement Operation: "+(--number));
+//			System.out.println("Value of Number After Increment is: "+number);
+//		}
+//
+//}
+
+//public class OperatorDemo {
+//	
+//	public static void main (String[] args) {
+//		
+//		int number1=10, number2=80;
+//		
+//		System.out.println(number1>number2?"Number1 is Greater":"Number2 is Greater");
+//		
+//	}
+//
+//}
+
+
+public class OperatorDemo {
+	
+	public static void main (String[] args) {
+		
+		
+		
+	}
+
+}
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DecisionControlDemo.java
+
+package com.amdocs;
+
+import java.util.Scanner;
+
+//public class DecisionControlDemo {
+//
+//	public static void main(String[] args) {
+//		
+//		Scanner sc = new Scanner(System.in);
+//		int time;
+//		System.out.println("Enter the Time: ");
+//		time = sc.nextInt();
+//		if(time==9) {
+//			System.out.println("Welcome to Amdocs Java Session");
+//		}
+//		else {
+//			System.out.println("Error...");
+//		}
+//	}
+//}
+
+//public class DecisionControlDemo {
+//
+//	public static void main(String[] args) {
+//		
+//		Scanner sc = new Scanner(System.in);
+//		int number;
+//		System.out.println("Enter the Number: ");
+//		number = sc.nextInt();
+//		if(number>=0) {
+//			if(number==0) {
+//				System.out.println("NUmber is neither positive nor negative");
+//			} else {
+//				System.out.println("Positive Number");
+//			}
+//		}
+//		else {
+//			System.out.println("Negative Number");
+//		}
+//	}
+//}
+
+public class DecisionControlDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int time;
+		System.out.println("Enter the Time: ");
+		time = sc.nextInt();
+		if(time>=9 && time<11 || time>11 && time<13 || time>=14 && time<16 || time>16 && time<18) {
+			System.out.println("Welcome to Java Amdocs Session");
+		} else if(time==11 || time==16) {
+			System.out.println("15 Minutes Tea Break");
+		} else if(time==13) {
+			System.out.println("Lunch Break");
+		} else if(time>=18 && time<24) {
+			System.out.println("Session is Ended. We will start it next day");
+		} else if(time>0 && time<9) {
+			System.out.println("Yet to Start the Session. Please wait till 9:00AM");
+		} else {
+			System.out.println("Invalid Time...");
+		}
+	}
+}
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+IterativeDemo.java
+
+package com.amdocs;
+
+//public class IterativeDemo {
+//
+//		public static void main(String[] args) {
+//			for(int i=1; i<=10; i++) {
+//				System.out.println("Hello Java Developers");
+//			}
+//			System.out.println("Outside Loop");
+//		}
+//}
+
+//public class IterativeDemo {
+//
+//	public static void main(String[] args) {
+//		int i=1;
+//		while(i<=7) {
+//			System.out.println("Hello Java Developers");
+//			i++;
+//		}
+//		System.out.println("Outside Loop");
+//	}
+//}
+
+//public class IterativeDemo {
+//
+//	public static void main(String[] args) {
+//		int i=1;
+//		do {
+//			System.out.println("Hello Java Developers");
+//			i++;
+//		}
+//		while(i<=7);
+//		System.out.println("Outside Loop");
+//	}
+//}
+
+//public class IterativeDemo {
+//
+//	public static void main(String[] args) {
+//		for(int row=1; row<=5; row++) {
+//			for(int col=1; col<=5; col++) {
+//				System.out.print(row+" ");
+//			}
+//			System.out.println();
+//		}
+//		System.out.println("Outside Loop");
+//	}
+//}
+
+//public class IterativeDemo {
+//
+//		public static void main(String[] args) {
+//			for(int i=1; i<=10; i++) {
+//				if(i==5) {
+//					break;
+//				} else {
+//					System.out.println(i+ " Hello Java Developers");
+//				}
+//			}
+//			System.out.println("Outside Loop");
+//		}
+//}
+
+public class IterativeDemo {
+
+	public static void main(String[] args) {
+		for(int i=1; i<=10; i++) {
+			if(i==5) {
+				continue;
+			} else {
+				System.out.println(i+ " Hello Java Developers");
+			}
+		}
+		System.out.println("Outside Loop");
+	}
+}
+
