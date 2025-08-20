@@ -1,0 +1,310 @@
+
+## Kaleb Avila Java scripts, first day.
+
+
+First class
+--------------------------------------------------------
+package com.amdocs;
+
+public class Clase1 {
+	public static void main(String[] args)
+	{
+		System.out.println("Hello JAVA Dev");
+	}
+}
+
+--------------------------------------------------------------
+
+Second class Name: DataTypesNDemos
+
+package com.amdocs;
+
+public class DataTypesNDemo {
+	public static void main(String[] args) {
+		int wholeNumber; //Declaring a variable
+		wholeNumber = 10; //Initialize a variable
+		
+		float decimalNum1 = 12.36f;
+		double decimalNum2 = 199.7353;
+		char singleAl = 'a';
+		boolean value = true;
+		long longIntV = 2352;
+		short shortIntV = 2324;
+		
+		System.out.println("The value in the Integer is " +wholeNumber);
+		System.out.println("The value of the integer is" +decimalNum2+ "\nThe Boolean value is"+value);
+		System.out.println("The value in long is: "+longIntV+"\nThe value in Short is: "+shortIntV);
+	}
+}
+
+------------------------------------------------------------------
+
+Third class Name: OperationsDemo
+
+package com.amdocs;
+
+//public class OpDemo {
+//	public static void main(String[] args) {
+//		int number1=10, number2=8;
+//		System.out.println("Number1 values is: "+number1+"\tnumber2 value is: "+number2);
+//		number1+=number2;
+//		number1-=number2;
+//		number1*=number2;
+//		number1/=number2;
+//		System.out.println("Number value is "+number1+"\tNumber2 values is: "+number2);
+//	}
+//}
+
+//public class OpDemo {
+//	public static void main(String[] args) {
+//		int number1=10, number2=8,output;
+//		
+//		output=number1+number2;
+//		System.out.println("Addition: "+output);
+//	}
+//}
+
+
+//public class OpDemo {
+//	public static void main(String[] args) {
+//		int number1= 10, number2=8, number3=8;
+//		System.out.println("comparison for greater than: "+(number1>number2 && number1==number3));
+//		System.out.println("comparison for greater than: "+(number1>number2 || number1==number3));
+//		System.out.println("comparison for greater than: "+(number1>number2 && number1!=number3));
+//		
+//		
+//		
+//	}
+//}
+
+// Unire operator
+
+//public class OpDemo {
+//	public static void main(String[] args) {
+//		int n1=1;
+//		System.out.println("Value of number is: "+n1);
+//		System.out.println("Increment op: "+(n1++)); //Post increment
+//		System.out.println("Values after increment: "+n1);
+//		System.out.println();
+//		System.out.println("Value of number is: "+n1);
+//		System.out.println("Increment op: "+(++n1)); // Pre increment
+//		System.out.println("Values after increment: "+n1);
+//		System.out.println();
+//		System.out.println("Value of number is: "+n1);
+//		System.out.println("Increment op: "+(n1--)); //Post decrement
+//		System.out.println("Values after increment: "+n1);
+//		System.out.println();
+//		System.out.println("Value of number is: "+n1);
+//		System.out.println("Increment op: "+(--n1)); //Pre decrement
+//		System.out.println("Values after increment: "+n1);
+//	}
+//}
+
+
+//public class OpDemo {
+//	public static void main(String[] args) {
+//		int n1=10, n2=8;
+//		
+//		System.out.println(n1>n2 ?"Number 1 is greater": "Number 2 is greater");
+//	}
+//}
+//import java.util.Scanner;
+//
+//public class OpDemo {
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		int time;
+//		
+//		System.out.println("Enter time: ");
+//		
+//		time =sc.nextInt();
+//		if(time==9)
+//		{
+//		System.out.println("welcome to the java session");
+//		}
+//		else
+//		{
+//			System.out.println("Error...");
+//		}
+//		
+//	}
+//}
+
+//import java.util.Scanner;
+//
+//public class OpDemo {
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		int n;
+//		
+//		System.out.println("Enter number: ");
+//		
+//		n = sc.nextInt();
+//		if(n>=0)
+//		{
+//			if(n==0)
+//			{
+//				System.out.println("Number is neither positivie or negative");
+//			}
+//			else
+//			{
+//				System.out.println("Positive number");
+//			}
+//		}
+//		else
+//		{
+//			System.out.println("Negative number");
+//		}
+//		
+//	}
+//}
+
+//import java.util.Scanner;
+//
+//public class OpDemo {
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		int time;
+//		
+//		System.out.println("Enter time: ");
+//		
+//		time =sc.nextInt();
+//		if(time==9 && time<11 || time>11 && time <13 || time>=14 && time<16 || time>16 && time<18)
+//		{
+//		System.out.println("welcome to the java session");
+//		}
+//		else if(time==11 || time==16)
+//		{
+//			System.out.println("16 minutes break");
+//		}
+//		else if(time==13)
+//		{
+//			System.out.println("Lunch break");
+//		}
+//		else if(time>=18 && time<24)
+//		{
+//			System.out.println("Session starts at 9am");
+//		}
+//		else if(time>0 && time<9)
+//		{
+//			System.out.println("Session starts at 9am");
+//		}
+//		else
+//		{
+//			System.out.println("Invalid time");
+//		}
+//		
+//	}
+//}
+
+--------------------------------------------------------------------------------------------
+Fourth class Name: IterativeDemo
+
+package com.amdocs;
+
+//public class iterativeDemo {
+//	public static void main(String[] args) {
+//		for(int i=1; i<=10; i++)
+//		{
+//			System.out.println("Hellos JavaDev");
+//		}
+//		System.out.println("OutsideLoop");
+//	}
+//}
+//
+
+//public class iterativeDemo {
+//	public static void main(String[] args) {
+//		int i=1;
+//		do
+//		{
+//			System.out.println("Hello java dev");
+//			i++;
+//		}
+//		while(i<=7);
+//		System.out.println("Outside loop");
+//			
+//	}
+//}
+
+//public class iterativeDemo {
+//	public static void main(String[] args) {
+//		int i=1;
+//		while(i<=7);
+//		{
+//			System.out.println("Hello java dev");
+//			i++;
+//		}
+//		
+//		System.out.println("Outside loop");
+//		
+//	}
+//}
+
+
+//public class iterativeDemo {
+//	public static void main(String[] args) {
+//		for(int row=1; row<=5;row++) // Outer loop
+//		{
+//			for(int col=1; col<=5; col++) //inner loop
+//			{
+//				System.out.println(row+" ");
+//			}
+//			System.out.println();
+//		}
+//		System.out.println("Outside loop");
+//	}
+//}
+
+//public class iterativeDemo {
+//	public static void main(String[] args) {
+//		for(int i=1; i<=10; i++)
+//		{
+//			if(i==5)
+//			{
+//				break;
+//			}
+//			else
+//			{
+//				System.out.println(i+". Hello java dev");
+//			}
+//		}
+//		System.out.println("outside loop");
+//	}
+//	
+//}
+
+//public class iterativeDemo {
+//	public static void main(String[] args) {
+//		int i=1;
+//		for(; ; i++)
+//		{
+//			if(i==5)
+//			{
+//				break; //terminate loop
+//			}
+//			else
+//			{
+//				System.out.println(i+". Hello java dev");
+//			}
+//		}
+//		System.out.println("out of loop");
+//	}
+//}
+
+public class iterativeDemo {
+	public static void main(String[] args) {
+		for(int i=1;i<=10 ; i++)
+		{
+			if(i==5)
+			{
+				continue; //terminate loop
+			}
+			else
+			{
+				System.out.println(i+". Hello java dev");
+			}
+		}
+		System.out.println("out of loop");
+	}
+}
