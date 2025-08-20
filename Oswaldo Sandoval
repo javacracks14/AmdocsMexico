@@ -1,0 +1,233 @@
+package com.amdocs;
+
+import java.util.Scanner;
+
+public class TestClass {
+//	public static void main(String[] args)
+//	{
+//		System.out.println("Hello world");
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		int wholeNumber = 10;
+//		float decimalNumber1 = 12.36f;
+//		double decimalNumber2 = 199.7353;
+//		char singleAlphabet = 'a';
+//		boolean value = true;
+//		long longValue = 2534523;
+//		short shortValue = 2324;
+//		
+//		System.out.println("Integer: " + wholeNumber);
+//		System.out.println("Float: " + decimalNumber1);
+//		System.out.println("Double: " + decimalNumber2);
+//		System.out.println("Char: " + singleAlphabet);
+//		System.out.println("Boolean: " + value);
+//		System.out.println("Long: " + longValue);
+//		System.out.println("Short: " + shortValue);
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		int number1=10, number2=8, output;
+//		
+//		output = number1 + number2;
+//		System.out.println("Addition output: " + output);
+//		output = number1 - number2;
+//		System.out.println("Substraction output: " + output);
+//		output = number1 * number2;
+//		System.out.println("Multiplication output: " + output);
+//		output = number1 / number2;
+//		System.out.println("Division output: " + output);
+//		output = number1 % number2;
+//		System.out.println("Modulus output: " + output);
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		int number1=10, number2=8;
+//		
+//		number1 += number2;
+//		number1 -= number2;
+//		number1 *= number2;
+//		number2 /=  number1;
+//		System.out.println("Number 1 value: " + number1 + ". Number 2 value: " + number2);
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		int number1=10, number2=8;
+//		
+//		System.out.println("Greater than: " + (number1>number2));
+//		System.out.println("Greater than or equal to: " + (number1>=number2));
+//		System.out.println("Less than: " + (number1<number2));
+//		System.out.println("Less than or equal to: " + (number1<=number2));
+//		System.out.println("Equal to: " + (number1==number2));
+//		System.out.println("Different to: " + (number1!=number2));
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		int number1=10, number2=8, number3=8;
+//		
+//		System.out.println("AND Operator value: " + (number1 > number2 && number1 == number3));
+//		System.out.println("OR Operator value: " + (number1 > number2 || number1 == number3));
+//		System.out.println("NOT Operator value: " + (number1 > number2 && number1 != number3));
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		int number = 1;
+//		
+//		System.out.println("Value of number is: " +  number);
+//		System.out.println("Increment operation: " + number++);
+//		System.out.println("Value of number after increment is: " + number);
+//		
+//		System.out.println("Value of number is: " +  number);
+//		System.out.println("Increment operation: " + ++number);
+//		System.out.println("Value of number after increment is: " + number);
+//		
+//		System.out.println("Value of number is: " +  number);
+//		System.out.println("Increment operation: " + number--);
+//		System.out.println("Value of number after decrement is: " + number);
+//		
+//		System.out.println("Value of number is: " +  number);
+//		System.out.println("Increment operation: " + --number);
+//		System.out.println("Value of number after decrement is: " + number);
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		int number = 1, number2=80;
+//		
+//		System.out.println(number1>number2? "Number 1 is greater":"Number 2 is greater");
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		Scanner sc = new Scanner(System.in);
+//		int time;
+//		
+//		System.out.println("Enter the time: ");
+//		time = sc.nextInt();
+//		
+//		if(time == 9)
+//			System.out.println("Welcome to Amdocs");
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		Scanner sc = new Scanner(System.in);
+//		int time;
+//		
+//		System.out.println("Enter the time: ");
+//		time = sc.nextInt();
+//		
+//		if(time == 9)
+//			System.out.println("Welcome to Amdocs");
+//		else
+//			System.out.println("Error");
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		Scanner sc = new Scanner(System.in);
+//		int time;
+//		
+//		System.out.println("Enter the time: ");
+//		time = sc.nextInt();
+//		
+//		if(time >= 0)
+//		{
+//			if(time == 0)
+//				System.out.println("Neither positive nor negative");
+//			else
+//				System.out.println("Positive number");
+//		}
+//		else
+//			System.out.println("Negative number");
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		Scanner sc = new Scanner(System.in);
+//		int time;
+//		
+//		System.out.println("Enter the time: ");
+//		time = sc.nextInt();
+//		
+//		if(time >= 9 && time<11 || time>11 && time<13 || time>=14 && time<16 || time>16 && time<18)
+//			System.out.println("Welcome to Amdocs");
+//		else if(time == 11 || time == 16)
+//			System.out.println("Tea break");
+//		else if(time == 13)
+//			System.out.println("Lunch break");
+//		else
+//			System.out.println("Session is ended. See you tomorrow!");
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		Scanner sc = new Scanner(System.in);
+//		int time;
+//		
+//		System.out.println("Enter the time: ");
+//		time = sc.nextInt();
+//		
+//		if(time >= 9 && time<11 || time>11 && time<13 || time>=14 && time<16 || time>16 && time<18)
+//			System.out.println("Welcome to Amdocs");
+//		else if(time == 11 || time == 16)
+//			System.out.println("Tea break");
+//		else if(time == 13)
+//			System.out.println("Lunch break");
+//		else
+//			System.out.println("Session is ended. See you tomorrow!");
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		for(int i=1; i<=10; i++)
+//		{
+//			System.out.println("For loop test: " + i);
+//		}
+//		System.out.println("Loop end");
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		int i=1;
+//		
+//		while(i<=7)
+//		{
+//			System.out.println("Inside loop: " + i);
+//			i++;
+//		}
+//		System.out.println("End loop");
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		int i=1;
+//		
+//		do
+//		{
+//			System.out.println("Inside loop: " + i);
+//			i++;
+//		}
+//		while(i<=7);
+//		System.out.println("End loop");
+//	}
+	
+//	public static void main(String[] args)
+//	{
+//		for(int row=1; row<=5; row++)
+//		{
+//			for(int col=1; col<=5; col++)
+//			{
+//				System.out.println(row + " ");
+//			}
+//			System.out.println();
+//		}
+//		System.out.println("Outside loop");
+//	}
+}
