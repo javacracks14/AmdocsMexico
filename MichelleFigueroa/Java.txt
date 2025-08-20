@@ -1,0 +1,285 @@
+FirstJavaProgram
+
+package com.amdocs;
+
+public class FirstJavaProgram {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Hello");
+
+	}
+
+}
+
+DataTypesVariablesDemo
+
+package com.amdocs;
+
+public class DataTypesVariablesDemo {
+
+	public static void main(String[] args) {
+		
+		int wholeNumber;
+		wholeNumber = 10;
+
+		float decimalNumber1 = 12.36f;
+		double decimalNumber2 = 199.7353;
+		char singleAlphabet = 'a';
+		boolean value = true;
+		long longIntValue = 2352;
+		short shortIntValue = 2324;
+
+		System.out.println("The value in Integer is: " + wholeNumber);
+		System.out. println("The value in Float is: " + decimalNumber1);
+		System.out.println("The value in Double is: " + decimalNumber2);
+		System.out. println("The value in Char is: " + singleAlphabet);
+		System.out.println("The value in Boolean is: " + value);
+		System.out.println("The value in Long is: " + longIntValue + "\nThe value in Short is: " + shortIntValue);
+		System.out.println("\"Hello\" from \"Amdocs\"");
+
+		System.out.println();
+
+	}
+
+}
+
+OperatorsDemo
+
+package com.amdocs;
+
+public class OperatorsDemo {
+
+	public static void main(String[] args) {
+		
+		int number1=10, number2=8, number3=8, output;
+
+		output = number1 + number2;
+		System.out.println("Addition Output is: " + output);
+		output = number1 - number2;
+		System.out.println("Subtraction Output is: " + output);
+		output = number1 * number2;
+		System.out.println("Multiplication Output is: " + output);
+		output = number1 / number2;
+		System.out.println("Division Output is: " + output);
+		output = number1 % number2;
+		System.out.println("Modulus Output is: " + output);
+		System.out. println();
+		System.out.println("Number1 value is: " + number1 + "\t Number2 value is: " + number2);
+		number1+=number2;
+		number1 -= number2;
+		number1 *= number2;
+		number2/=number1;
+		System.out.println("Number1 value is: " + number1 + "\t Number2 value is: " + number2);
+		System.out. println();
+		System.out.println("Comparison for greater than: " + (number1>number2));
+		System.out.println("Comparison for greater than equal to: " + (number1>=number2));
+		System.out.println("Comparison for less than: "+ (number1<number2));
+		System.out.println("Comparison for less than equal to: " + (number1 <= number2));
+		System.out.println("Comparison for equal than: " + (number1 == number2));
+		System.out.println("Comparison for not equal than: " + (number1 != number2));
+		System.out. println();
+		System.out. println("Logical and operator value is: " + (number1>number2 && number1 == number3 ));
+		System.out.println("Logical or operator value is: " + (number1>number2 || number1 == number3 ));
+		System.out.println("Logical not operator value is: " + (number1>number2 && number1 != number3 ));
+		System.out. println();
+
+		int number=1;
+
+		System.out.println("Value of number is: " + number);
+		System.out.println("Increment Operation: " + (number++));
+		System.out.println("Value of Number After Increment is: " + number);
+		System.out. println();
+		System.out.println("Value of number is: " + number);
+		System.out.println("Increment Operation: " + (++number));
+		System.out.println("Value of Number After Increment is: " + number);
+		System.out.println();
+		System.out.println("Value of number is: " + number);
+		System.out.println("Decrement Operation: " + (number -- ));
+		System.out.println("Value of Number After Decrement is: " + number);
+		System.out.println();
+		System.out.println("Value of number is: " + number);
+		System.out.println("Decrement Operation: " + ( -- number));
+		System.out.println("Value of Number After Decrement is: " + number);
+		System.out. println();
+
+		System.out.println(number1>number2?"Number1 is greater":"Number2 is greater");
+
+	}
+
+}
+
+DecisionControlDemo
+
+package com.amdocs;
+import java.util.*;
+
+public class DecisionControlDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int time;
+		System.out.print("Enter the Time: ");
+		time = sc.nextInt();
+		
+//		if
+//		if(time == 9)
+//		{
+//			System.out.println("Welcome to Amdocs Java Session");
+//		}
+		
+//		if else
+//		if(time == 9)
+//		{
+//	 		System.out.println("Welcome to Amdocs Java Session");
+//		}
+//		else
+//		{
+//			System.out.println("Error ... ");
+//		}
+		
+//		int number;
+//		System.out.print("Enter the number: ");
+//		number = sc.nextInt();
+//		if(number>=0) // Outer If
+//		{
+//			if(number == 0) // Inner If or Nested If
+//			{
+//				System.out.println("Number is neither positive nor negative");
+//			}
+//			else
+//			{
+//				System.out.println("Positive Number");
+//			}
+//		}
+//		else
+//		{
+//		System.out.println("Negative Number");
+//		}
+		
+		if(time>=9 && time<11 || time>11 && time<13 || time>=14 && time<16 || time>16 && time<18)
+		{
+			System.out.println("Welcome to Java Amdocs Session");
+		}
+		else if(time == 11 || time == 16)
+		{
+			System.out.println("15 Minutes Tea Break");
+		}
+		else if(time == 13)
+		{
+			System.out.println("Lunch Break");
+		}
+		else if(time>=18 && time<24)
+		{
+			System.out.println("Session is Ended. We will start it next day");
+		}
+		else if(time>0 && time<9)
+		{
+			System.out.println("Yet to Start the Session. Please wait till 9:00AM");
+		}
+		else
+		{
+		System.out.println("Invalid Time ... ");
+		}
+	}
+
+}
+
+IterativeDemo
+
+package com.amdocs;
+
+public class IterativeDemo {
+
+	public static void main(String[] args) {
+		
+		for(int i=1; i <= 10; i++)
+		{
+		System.out.println("Hello Java Developers");
+		}
+		System.out.println("Outside Loop");
+		
+		int i=1;
+		while(i <= 7)
+		{
+			System.out.println("Hello Java Developers");
+			i++;
+		}
+		System.out.println("Outside Loop");
+		
+		int h=1;
+		do
+		{
+			System.out.println("Hello Java Developers");
+			h++;
+		}
+		while(h <= 7);
+		System.out.println("Outside Loop");
+		
+		for(int row=1; row <= 5; row++) // Outer Loop
+		{
+			for(int col=1; col <= 5; col++) // Inner Loop
+			{
+				System.out.print(row+" ");
+			}
+			
+			System.out.println();
+		}
+		
+		System.out.println("Outside Loop");
+
+	}
+
+}
+
+BranchingDemo
+
+package com.amdocs;
+
+public class BranchingDemo {
+
+	public static void main(String[] args) {
+		
+		for(int i=1; i <= 10; i++)
+		{
+			if(i == 5)
+			{
+				break; // terminate your loop
+			}
+			else
+			{
+				System.out.println(i+". Hello Java Developers");
+			}
+		}
+		System.out.println("Outside Loop");
+		
+		int h=1;
+		for(; ; h++)
+		{
+			if(h == 5)
+			{
+				break; // terminate your loop
+			}
+			else
+			{
+				System.out.println(h+". Hello Java Developers");
+			}
+		}
+		System.out.println("Outside Loop");
+		
+		for(int i=1; i <= 10; i++)
+		{
+			if(i == 5)
+			{
+				continue; // skip a turn in the loop
+			}
+			else
+			{
+				System.out.println(i+". Hello Java Developers");
+			}
+		}
+		System.out.println("Outside Loop");
+	}	
+}
+
