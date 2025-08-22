@@ -4,6 +4,7 @@ public class Employee {
 	private int empid;
 	private String name;
 	private double salary;
+	private static int count;
 	
 	public Employee() {
 		empid = 101;
@@ -28,5 +29,9 @@ public class Employee {
 	}
 	public double getSalary() {
 		return salary;
+	}
+	
+	public static void displayTotalEmployeeCount() {
+		System.out.println("Total employees: "+count);
 	}
 }
