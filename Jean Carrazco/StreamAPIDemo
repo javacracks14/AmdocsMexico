@@ -1,0 +1,77 @@
+package Threads;
+//
+//import java.util.ArrayList;
+//import java.util.List;
+//import java.util.Set;
+//import java.util.stream.Collectors;
+//
+//public class StreamAPIDemo {
+//	public static void main(String[] args) {
+//		ArrayList<Integer> data = new ArrayList<>();
+//		data.add(2);
+//		data.add(5);
+//		data.add(1);
+//		data.add(3);
+//		data.add(4);
+//		System.out.println(data);
+//		List<Integer> ls = data.stream().filter(i -> i % 2 != 0).collect(Collectors.toList());
+//		Set<Integer> sls = data.stream().filter(i -> i % 2 != 0).collect(Collectors.toSet());
+//		System.out.println(ls);
+//		System.out.println(sls);
+//	}
+//
+//}
+//import java.util.ArrayList;
+//import java.util.List;
+//import java.util.stream.Collectors;
+//
+//public class StreamAPIDemo {
+//	public static void main(String[] args) {
+//		ArrayList<Integer> data = new ArrayList<>();
+//		data.add(2);
+//		data.add(5);
+//		data.add(1);
+//		data.add(3);
+//		data.add(4);
+//		System.out.println(data);
+//		List<Integer> ls = data.stream().map(i->i+12).collect(Collectors.toList());
+//		System.out.println(ls);
+//	}
+//
+//}
+//import java.util.ArrayList;
+//import java.util.List;
+//import java.util.stream.Collectors;
+//
+//public class StreamAPIDemo {
+//	public static void main(String[] args) {
+//		ArrayList<Integer> data = new ArrayList<>();
+//		data.add(2);
+//		data.add(5);
+//		data.add(1);
+//		data.add(3);
+//		data.add(4);
+//		System.out.println(data);
+//		List<Integer> ls = data.stream().sorted().collect(Collectors.toList());
+//		System.out.println(ls);
+//	}
+//
+//}
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamAPIDemo {
+	public static void main(String[] args) {
+		ArrayList<Integer> data = new ArrayList<>();
+		data.add(2);
+		data.add(5);
+		data.add(1);
+		data.add(3);
+		data.add(4);
+		System.out.println(data);
+		List<Integer> ls = data.stream().filter(i-> i % 2 != 0).map(i->i+1).sorted().collect(Collectors.toList());
+		System.out.println(ls);
+	}
+
+}
